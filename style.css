@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #111; 
+}
+
+.logo img {
+  height: 70px; 
+  width: 70px;
+  background-color: rgba(92, 81, 81, 0);
+  border-radius: 20%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.nav-links a:hover {
+ color: #00bfff;
+}
+
+.navbar .logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.login {
+    display: flex;
+    gap: 30px;
+}
+.login a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.login a:hover {
+ color: #00bfff;
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .card-produto {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #2b1b1b;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .card-produto:hover {
+    transform: scale(1.05);
+  }
+
+  .card-produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-produto h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+  }
+
+  .preco {
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 10px;
+  }
+
+  .card-produto button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .card-produto button:hover {
+    background-color: #2980b9;
+  }

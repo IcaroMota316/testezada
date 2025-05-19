@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barra de Navegação</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <header class="navbar">
+  <a href="#" class="logo">
+    <img src="logo.png" alt="Logo My Drugs" />
+  </a>
+  <nav class="nav-links">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Ervas</a>
+    <a href="#">Comprimidos</a>
+  </nav>
+  <div class="login">
+    <a href="#">Login</a>
+  </div>
+</header>
+<h1>Mais Pedidos:</h1>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+<section class="produtos">
+  <div class="card-produto">
+    <img src="produto.jpg" alt="Produto 1">
+    <h3>Alegria Fest 50 Gramas</h3>
+    <p class="preco">R$ 30,90</p>
+    <button>Ver mais</button>
+  </div>
+
+  <div class="card-produto">
+    <img src="produto2.jpg" alt="Produto 2">
+    <h3>Paz 50 Gramas</h3>
+    <p class="preco">R$ 30,90</p>
+    <button>Ver mais</button>
+  </div>
+
+    <div class="card-produto">
+    <img src="produto3.jpg" alt="Produto 2">
+    <h3>Happy Nation 50 Gramas</h3>
+    <p class="preco">R$ 149,90</p>
+    <button>Ver mais</button>
+  </div>
+
+    <div class="card-produto">
+    <img src="produto4.jpg" alt="Produto 2">
+    <h3>Kit Chernobyll 100 Gramas</h3>
+    <p class="preco">R$ 149,90</p>
+    <button>Ver mais</button>
+  </div>
+
+    <div class="card-produto">
+    <img src="produto5.jpg" alt="Produto 2">
+    <h3>Natural 100 Gramas</h3>
+    <p class="preco">R$ 149,90</p>
+    <button>Ver mais</button>
+  </div>
+ 
+</section>
+</body>
+</html>
